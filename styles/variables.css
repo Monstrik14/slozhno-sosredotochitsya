@@ -5,4 +5,8 @@
   --title-text-color: #000E2E;
   --accent-color: #FF0070;
   --accent-text-color: #F1B2CE;
+  --theme-color: #FF0070; 
+  --hover-border-color: rgba(255, 0, 112, 0.4);
+  --tiny-padding: 10px;
+  --normal-padding: 20px; 
 }
