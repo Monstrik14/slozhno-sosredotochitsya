@@ -412,7 +412,7 @@
 
   .header__theme-menu {
     display: flex;
-    justify-self: center;
+    justify-self: center; 
     align-self: flex-start;
   }
 
