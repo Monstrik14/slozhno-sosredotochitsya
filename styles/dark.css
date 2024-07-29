@@ -1,11 +1,7 @@
 
 .page.theme_dark {
-  background-image: url(/images/cover-image-dark.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../images/cover-image-dark.png); 
   --bg-color: #000028;
-  --main-font: 'IBM Plex Mono',sans-serif;
   --title-color: #DB00FF;
   --title-text-color: #000E2E;
   --accent-color: #FF0070;
@@ -13,15 +9,15 @@
   --theme-color: #FF0070;
 }
 
+.decorated__zone-text {
+  display: block;
+}
+
 @media (prefers-color-scheme:dark) {
 
   .page {
-    background-image: url(/images/cover-image-dark.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../images/cover-image-dark.png);
     --bg-color: #000028;
-    --main-font: 'IBM Plex Mono',sans-serif;
     --title-color: #DB00FF;
     --title-text-color: #000E2E;
     --accent-color: #FF0070;
