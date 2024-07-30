@@ -7,11 +7,12 @@
   --accent-color: #FF0070;
   --accent-text-color: #F1B2CE; 
   --theme-color: #FF0070;
-}
+  --border-hover-color:rgba(255, 0, 112, 0.4);
+} 
 
-.decorated__zone-text {
-  display: block;
-}
+.page.theme_dark .decorated__zone-text { 
+  display: block; 
+} 
 
 @media (prefers-color-scheme:dark) {
 
@@ -23,5 +24,10 @@
     --accent-color: #FF0070;
     --accent-text-color: #F1B2CE;
     --theme-color: #FF0070;
+    --border-hover-color:rgba(255, 0, 112, 0.4);
   }
+
+  .decorated__zone-text { 
+    display: block; 
+  } 
 }
