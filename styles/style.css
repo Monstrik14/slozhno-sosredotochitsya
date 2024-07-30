@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
 }
 
+
+
 .container { 
   padding-inline: var(--tiny-padding);
 }
@@ -62,11 +64,7 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 3px 2px var(--accent-color);
-}
-
-.page.theme_dark .decorated__zone-text {
-  display: block;
-}
+} 
 
 .header__theme-menu {
   justify-self: flex-end;
@@ -146,6 +144,11 @@
 
 .section__paragraph {
   line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.section__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .section__why-link:focus {
@@ -174,7 +177,7 @@
 }
 
 .section__link:focus {
-  outline: 1px solid var(--theme-color);
+  outline: 1px solid var(--accent-text-color);
 }
 
 .section__what {
@@ -244,12 +247,12 @@
     margin-bottom: 60px;
   }
 
-  .header::before {
+  .corner-decor::before {
     top: 20px;
     right: 20px;
   }
   
-  .header::after {
+  .corner-decor::after {
     bottom: 20px;
     left: 20px;
   }
@@ -269,7 +272,7 @@
   }
 
   .title__paragraph {
-    width: 48%;
+    width: 47%; 
     justify-self: flex-end;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -301,8 +304,11 @@
     margin-top: 80px;
   }
 
-  .cards__list {
-    margin-top: 20px;
+  .cards__section-title {
+    margin-bottom: 20px;
+  }
+
+  .cards__list { 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, min-content);
     gap: 20px;
@@ -332,20 +338,14 @@
 
   .footer__title {
     text-shadow: 2px 2px 0 var(--accent-color);
-  }
-
-  .footer::before {
-    top: 20px;
-    right: 20px;
-  }
-  
-  .footer::after {
-    bottom: 20px;
-    left: 20px;
-  }
+  } 
 }
 
 @media (min-width: 1024px) {
+
+  .title__paragraph {
+    width: 48%;
+  }
 
   .header__theme-menu {
     display: flex;
@@ -353,8 +353,7 @@
     align-self: flex-start;
   }
 
-  .header__theme-menu-list {
-    display: flex;
+  .header__theme-menu-list { 
     flex-direction: row;
     padding-top: 10px;
   }
